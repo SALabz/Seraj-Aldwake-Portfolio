@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from "../assets/hero-illustration.png";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -18,20 +19,34 @@ const Hero = () => {
 
         <div className="mt-28 md:mt-5 lg:5">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Huzaif</span>
+            Hi, I'm <span className='text-[#915EFF]'>"Seraj"</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop modern, user <br/>
-            interfaces and web applications
+            I build AI-powered tools, robotics systems, <br />
+            and smart automation for the real world.
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <img
+          src={heroImage}
+          alt="Hero Visual"
+          className="absolute bottom-0 w-full h-[80%] object-contain"
+        />
+      </motion.div>
+
+
 
       
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
@@ -47,7 +62,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

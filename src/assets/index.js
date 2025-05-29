@@ -30,6 +30,23 @@ import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp'
 
+import python from './tech/Python.png'
+import cpp from "./tech/C++ (CPlusPlus).png";
+import tensorflow from "./tech/TensorFlow.png";
+import pytorch from "./tech/PyTorch.png";
+import ros from "./tech/Robot Operating System (ROS).png";
+import gazebo from "./tech/Gazebo.png";
+import matlab from "./tech/MATLAB.png";
+import linux from "./tech/Linux.png";
+import opencv from "./tech/OpenCV.png";
+import numpy from "./tech/NumPy.png";
+import sklearn from "./tech/scikit-learn.png";
+import jupyter from "./tech/Jupyter.png";
+import arduino from "./tech/Arduino.png";
+import raspberrypi from "./tech/Raspberry Pi.png";
+import stm32 from "./tech/microntroller.png"; 
+
+
 export {
   logo,
   backend,
@@ -62,5 +79,19 @@ export {
   redux,
   tailwind,
   threejs,
-
+  python,
+  cpp,
+  tensorflow,
+  pytorch,
+  ros,
+  gazebo,
+  matlab,
+  linux,
+  opencv,
+  numpy,
+  sklearn,
+  jupyter,
+  arduino,
+  raspberrypi,
+  stm32,
 };

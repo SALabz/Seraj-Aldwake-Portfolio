@@ -72,10 +72,17 @@ const About = () => {
       </div>
 
       <p ref={paragraphRef} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a skilled software developer with experience in  JavaScript, and expertise in frameworks 
-        like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, 
-        scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+        I'm an engineer with hands-on experience in embedded controls, perception systems, and machine learning — actively building toward roles in ADAS and applied AI. 
+        My background spans powertrain diagnostics, sensor fusion, and real-time robotic systems. I'm passionate about pushing the boundary between robotics and intelligent autonomy, 
+        with a strong focus on building real-world, scalable solutions that bridge hardware and AI.
       </p>
+
+      <div className="mt-16">
+        <h3 className="text-white text-[24px] font-bold text-center mb-4">
+          My Technical Focus Areas
+        </h3>
+      </div>
+
 
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-10">
         {services.map((service, index) => (
