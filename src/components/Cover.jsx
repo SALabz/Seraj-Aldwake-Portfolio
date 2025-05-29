@@ -12,13 +12,14 @@ const Cover = ({ onReveal }) => {
 
   return (
     <motion.div
+      onClick={onReveal}
       initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
-      className="relative w-screen h-screen bg-[#f0f4f8] text-blue-700 flex flex-col items-center justify-center overflow-hidden"
+      className="relative w-screen h-screen bg-[#f0f4f8] text-blue-700 flex flex-col items-center justify-center cursor-pointer overflow-hidden"
     >
-      {/* Background blobs */}
+      {/* Ambient background blobs */}
       <div className="absolute w-[60vw] h-[60vw] bg-blue-300 rounded-full blur-3xl opacity-30 animate-blob1"></div>
       <div className="absolute w-[50vw] h-[50vw] bg-purple-300 rounded-full blur-3xl opacity-20 animate-blob2 top-1/3 left-1/2"></div>
       <div className="absolute w-[40vw] h-[40vw] bg-cyan-200 rounded-full blur-3xl opacity-30 animate-blob3 bottom-0 right-0"></div>
@@ -36,9 +37,6 @@ const Cover = ({ onReveal }) => {
           serajealdwake.com
         </span>
       </div>
-
-
-
     </motion.div>
   );
 };

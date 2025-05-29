@@ -65,16 +65,26 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
+<<<<<<< HEAD
               className="bg-[#1f2937] w-14 h-14 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200"
+=======
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+>>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
             >
               <img
                 src={github}
                 alt="source code"
+<<<<<<< HEAD
                 className="w-4/5 h-4/5 object-contain invert"
               />
             </div>
 
 
+=======
+                className="w-1/2 h-1/2 object-contain"
+              />
+            </div>
+>>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
           </div>
         </div>
 
