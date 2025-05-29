@@ -115,23 +115,23 @@ const technologies = [
  
 
 
-<<<<<<< HEAD
+
 import mahleLogo from "../assets/mahle.svg";     // add this logo manually
 import avancezLogo from "../assets/avancezLogo.jpg"; // add this logo manually
-=======
+
 // import mahleLogo from "../assets/company/mahle.png";     // add this logo manually
 // import avancezLogo from "../assets/company/avancez.png"; // add this logo manually
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
 
 const experiences = [
   {
     title: "Embedded Controls Co-Op",
     company_name: "MAHLE Powertrain",
-<<<<<<< HEAD
+
     icon: mahleLogo,
-=======
+
     // icon: mahleLogo,
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
     iconBg: "#004080",
     date: "Jan 2025 – Present",
     points: [
@@ -144,11 +144,11 @@ const experiences = [
   {
     title: "Engineering Intern",
     company_name: "Avancez LLC",
-<<<<<<< HEAD
+
     icon: avancezLogo,
-=======
+
     // icon: avancezLogo,
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
     iconBg: "#2C3E50",
     date: "Apr 2024 – Dec 2024",
     points: [
@@ -198,11 +198,11 @@ const projects = [
       { name: "MoveIt", color: "pink-text-gradient" },
     ],
     image: "", // leave this empty if you're not using images
-<<<<<<< HEAD
+
     source_code_link: "https://github.com/SALabz/Robot-Arm/blob/main/README.md",
-=======
+
     source_code_link: "",
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
   },
   {
     name: "Autonomous Driving Car",
@@ -214,11 +214,11 @@ const projects = [
       { name: "YOLOv5", color: "pink-text-gradient" },
     ],
     image: "",
-<<<<<<< HEAD
+
     source_code_link: "https://github.com/SALabz/Lane-navigating-RoboCar/blob/main/README.md",
-=======
+
     source_code_link: "",
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
   },
   {
     name: "AI-Driven OCR Pipeline",
@@ -230,11 +230,11 @@ const projects = [
       { name: "YOLOv5", color: "pink-text-gradient" },
     ],
     image: "",
-<<<<<<< HEAD
+
     source_code_link: "https://github.com/SALabz/ID-Detection-Extraction-via-OCR/blob/main/README.md",
-=======
+
     source_code_link: "",
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
   },
   {
     name: "Emotion Recognition via CNN",
@@ -246,11 +246,11 @@ const projects = [
       { name: "Real-time", color: "pink-text-gradient" },
     ],
     image: "",
-<<<<<<< HEAD
+
     source_code_link: "https://github.com/SALabz/Emotion-Recognition-via-CNN/blob/main/README.md",
-=======
+
     source_code_link: "",
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
+
   },
 ];
 

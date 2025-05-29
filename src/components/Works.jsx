@@ -46,65 +46,55 @@ const ProjectCard = ({
   }, []);
 
   return (
-    <div ref={cardRef}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
-        <div className="relative w-full h-[230px]">
+   <div ref={cardRef}>
+  <Tilt
+    options={{
+      max: 45,
+      scale: 1,
+      speed: 450,
+    }}
+    className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+  >
+    <div className="relative w-full h-[230px]">
+      <img
+        src={image}
+        alt="project_image"
+        className="w-full h-full object-cover object-left rounded-2xl"
+      />
+
+      <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+        <div
+          onClick={() => window.open(source_code_link, "_blank")}
+          className="bg-[#1f2937] w-14 h-14 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200"
+        >
           <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover object-left rounded-2xl"
+            src={github}
+            alt="source code"
+            className="w-4/5 h-4/5 object-contain invert"
           />
-
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-<<<<<<< HEAD
-              className="bg-[#1f2937] w-14 h-14 rounded-full flex justify-center items-center cursor-pointer hover:scale-110 transition-transform duration-200"
-=======
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
-            >
-              <img
-                src={github}
-                alt="source code"
-<<<<<<< HEAD
-                className="w-4/5 h-4/5 object-contain invert"
-              />
-            </div>
-
-
-=======
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
->>>>>>> 560e4277f672e6841307c2167676cf601d1c6f08
-          </div>
         </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
+      </div>
     </div>
+
+    <div className="mt-5">
+      <h3 className="text-white font-bold text-[24px]">{name}</h3>
+      <p className="mt-2 text-sky-200 text-[14px]">{description}</p>
+
+    </div>
+
+    <div className="mt-4 flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <p
+          key={`${name}-${tag.name}`}
+          className={`text-[14px] ${tag.color}`}
+        >
+          #{tag.name}
+        </p>
+      ))}
+    </div>
+  </Tilt>
+</div>
+
   );
 };
 
@@ -140,7 +130,7 @@ const Works = () => {
       </div>
 
       <div className="w-full flex">
-        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+        <p className="mt-3 text-sky-400 text-[17px] max-w-3xl leading-[30px]">
           These projects reflect my growing expertise and passion for ADAS, 
           embedded ML, and robotic systems. From real-time motor control and
           camera-based lane detection to OCR pipelines and gesture-controlled

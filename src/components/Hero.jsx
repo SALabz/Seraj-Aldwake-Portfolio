@@ -38,8 +38,9 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Hero Visual"
-          className="absolute bottom-0 w-full h-[80%] object-contain"
+          className="absolute bottom-[-10%] w-full h-[80%] object-contain"
         />
+
       </motion.div>
 
 
